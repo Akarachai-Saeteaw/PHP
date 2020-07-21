@@ -261,10 +261,49 @@
     // $str_2 = "you word upper";
     // echo ucwords($str_2);
 
-    //Cut space in strings
-    $str_1 = "  YouWebprogramming  ";
-    $strl = ltrim($str_1);
-    echo $str_1."ก่อนใช้".strlen($str_1);
-    echo $strl."หลังใช้".strlen($strl);
+    // //Cut space in strings
+    // $str_1 = "  YouWebprogramming  ";
+    // $strl = ltrim($str_1);
+    // echo $str_1."ก่อนใช้".strlen($str_1);
+    // echo $strl."หลังใช้".strlen($strl);
 
+    // //transform arrays to string
+    // $arr = array("Thai", "Lao", "Chinese", "Japanese");
+    // $str = implode(",", $arr);
+    // echo $str;
+    // print_r ($arr);
+    // $str_1 = join("*", $arr);
+    // echo $str_1;
+
+    // //string to array
+    // $str = "pig, chinken, squied, shamk, fish, vegetable";
+    // echo $str;
+    // $str_arr = explode(",", $str);
+    // print_r ($str_arr);
+
+    // //function change of some strings to new strings
+    // $str = "PHP WEBPROGRAMMING";
+    // echo str_replace("PHP", "JAVA", $str);
+
+    // //function of string reverse order
+    // $str = "PHP WebProgramming";
+    // echo strrev($str);
+
+    //date and time
+    // //format of time LMT: Local, GMT: General
+    // $var_1 = time(); //Unix time stand / second
+    // $var_2 = date("d/F/Y", time());// d, j = Day in 2 letters 01-31, D, l = Day 3 letters M,F = Month full letters Y, y = Year
+    // echo $var_2;
+    
+    // //LMT
+    // date_default_timezone_set('Asia/Bangkok');
+    // echo date('r');
+    // echo date(" d/D/F/Y");
+
+    //GetDate
+    date_default_timezone_set('Asia/Bangkok');
+    $date_time = getdate(); //type array
+    echo "Time in Seconds ".$date_time['seconds'];
+    echo " Time in Minutes ".$date_time['minutes'];
+    echo " Time in hours ".$date_time['hours'];
 ?>
